@@ -1,31 +1,27 @@
-const sides=document.querySelectorAll(".side-input");
-const calculateAreaBtn=document.querySelector("#calculate-area-btn");
+const angleInput=document.querySelectorAll(".angle-input");
+const checkBtn= document.querySelector("#check-btn");
 const outputDiv=document.querySelector("#output");
 
-function calculateSemiPerimeter(a,b,c){
-    const semiPerimeter=(a+b+c)/2;
-    return semiPerimeter;
-}
-function calculateMultiplication(){
-    const s=calculateSemiPerimeter(Number(sides[0].value),Number(sides[1].value),Number(sides[2].value));
-
-    const product=s*(s-Number(sides[0].value))*(s-Number(sides[1].value))*(s-Number(sides[2].value))
-
-    return product;
+function calculateSumOfAngles(angle1, angle2,angle3){
+    const sum= angle1 + angle2 + angle3;
+    return sum;
 }
 
-function calculateArea(){
-    const multiplication=calculateMultiplication()
-    const area=Math.sqrt(multiplication);
-    outputDiv.innerText="Area of triangle using Heron's formula = "+area+" unit square";
-
-}
-function checkError(){
-    if(sides[0].value>0 && sides[1].value>0 && sides[2].value>0){
-        calculateArea();
+function isTriangle(){
+    const sumOfAngles= calculateSumOfAngles( Number(angleInput[0].value),Number(angleInput[1].value),Number(angleInput[2].value))
+    if(sumOfAngles===180){
+    outputDiv.innerText= "It is a triangle."
     }else{
-        outputDiv.innerText="Please enter valid side values"
+    outputDiv.innerText= "It is NOT a triangle."
     }
 }
 
-calculateAreaBtn.addEventListener("click",checkError);
+function checkError(){
+    if(angleInput[0].value>0 && angleInput[1].value>0 && angleInput[2].value>0){
+        isTriangle();
+    }
+    else{
+        outputDiv.innerText="Please enter valid angle value";
+    }  
+}
+checkBtn.addEventListener("click",checkError);
