@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    box-sizing: border-box;
+}
+.container-fluid {
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+
+.navigation {
+    background-color: #282f35;
+    padding: 1rem 0rem;
+    color: white;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .app-name {
+    font-family: 'Righteous', cursive;
+    font-size: x-large;
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0rem 0.8rem;;
+}
+
+.navigation a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white
+}
+
+.navigation .active {
+    font-weight: bold;
+}
+
+body{
+   background-color:#8841F4;
+   color:white;
+}
+h3{
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.3rem;
+}
+
+.container {
+    margin: 1rem auto;
+    max-width: 800px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+}
+h3{
+    font-weight: bold;
+}
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #282f35;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border-width:medium;
+    border-color:white;
+    margin: 0.8rem auto;
+    font-weight: bold;
+    color: white;
+}
+
+#output{
+    margin-top:1rem ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}

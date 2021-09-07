@@ -20,5 +20,12 @@ function calculateArea(){
     outputDiv.innerText="Area of triangle using Heron's formula = "+area+" unit square";
 
 }
+function checkError(){
+    if(sides[0].value>0 && sides[1].value>0 && sides[2].value>0){
+        calculateArea();
+    }else{
+        outputDiv.innerText="Please enter valid side values"
+    }
+}
 
-calculateAreaBtn.addEventListener("click",calculateArea);
+calculateAreaBtn.addEventListener("click",checkError);

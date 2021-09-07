@@ -5,14 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+    <nav class="navigation">
+        <div class="container-fluid">
+        <div class="app-name">Fun With Triangles</div>
+        <ul>
+            <li>
+                <a href="/istriangle.html" >Is triangle?</a>
+                
+            </li>
+            <li>
+                <a href="/hypotenuse.html">Hypotenuse</a>
+                
+            </li>
+            <li>
+                <a href="/trianglearea.html">Area of Triangle</a>
+            </li>
+            <li>
+                <a href="/quiz.html" class="active">Quiz</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <h3>Quiz on Triangle</h3>
     <form class="quiz-form">
-        <p>Que(1) For triangle to be called as "Right angled triangle", it's one angle must be of?</p>
-        <label><input type="radio" name="question1" value="30∘" >30∘</label>
-        <label><input type="radio" name="question1" value="30∘" >90</label>
-        
+        <p class="questions">Que(1) For triangle to be called as "Right angled triangle", it's one angle must be of?</p>
+        <label><input type="radio" name="question1" value="30°" >30°</label>
+        <label><input type="radio" name="question1" value="90°" >90°</label>
+        <label><input type="radio" name="question1" value="60°" >60°</label>
+        <label><input type="radio" name="question1" value="180°" >180°</label>
+   
+
+        <p class="questions">Que(2) Triangle with all it's sides are equal in length, is called as?</p>
+        <label><input type="radio" name="question2" value="Equilateral triangle" >Equilateral triangle</label>
+        <label><input type="radio" name="question2" value="Right Angled Triangle" >Right Angled Triangle</label>
+        <label><input type="radio" name="question2" value="Isosceles Triangle" >Isosceles Triangle</label>
+        <label><input type="radio" name="question2" value="None of the above" >None of the above</label>
+   
+
+        <p class="questions">Que(3) In a ∆ PQR if ∠P = 60°; ∠Q =80°, angle R will be?</p>
+        <label><input type="radio" name="question3" value="Right angle" >Right angle</label>
+        <label><input type="radio" name="question3" value="Obtuse angle" >Obtuse angle</label>
+        <label><input type="radio" name="question3" value="Acute angle" >Acute angle</label>
+        <label><input type="radio" name="question3" value="None of the above" >None of the above</label>
+   
+
+        <p class="questions">Que(4) In a ∆ ABC if ∠A = 50° and ∠B =50°, then ∆ ABC is called as?</p>
+        <label><input type="radio" name="question4" value="Right angled triangle" >Right angled triangle</label>
+        <label><input type="radio" name="question4" value="Isosceles Triangle" >Isosceles Triangle</label>
+        <label><input type="radio" name="question4" value="Equilateral triangle" >Equilateral triangle</label>
+        <label><input type="radio" name="question4" value="None of the above" >None of the above</label>
+   
+
+        <p class="questions">Que(5) In a triangle, a staight line through a vertex and midpoint of opposite side is called as?</p>
+        <label><input type="radio" name="question5" value="Median" >Median</label>
+        <label><input type="radio" name="question5" value="Altitude" >Altitude</label>
+        <label><input type="radio" name="question5" value="Perpendicular bisector" >Perpendicular bisector</label>
+        <label><input type="radio" name="question5" value="None of the above" >None of the above</label>
+   
     </form>
-    
+    <button id="submit-btn">Submit All Answers</button>
+    <div id="output"></div>
+</div>
+    <script src="quiz.js"></script>
 </body>
 </html>

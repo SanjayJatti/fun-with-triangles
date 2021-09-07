@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun With Triangles</title>
+    <title>Fun With Triangle|Is triangle?</title>
+    <link rel="stylesheet" href="istriangle.css">
 </head>
 <body>
-    <h1>Angles of triangle</h1>
+    <nav class="navigation">
+        <div class="container-fluid">
+        <div class="app-name">Fun With Triangles</div>
+        <ul>
+            <li>
+                <a href="/istriangle.html" class="active">Is triangle?</a>
+                
+            </li>
+            <li>
+                <a href="/hypotenuse.html"  >Hypotenuse</a>
+                
+            </li>
+            <li>
+                <a href="/trianglearea.html">Area of Triangle</a>
+            </li>
+            <li>
+                <a href="/quiz.html">Quiz</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <h3>Angles of triangle</h3>
     <label for="angle-1" >Angle1</label>
     <input type="number" class="angle-input">
     <label for="angle-2">Angle2</label>
@@ -15,7 +38,9 @@
     <label for="angle-3" >Angle3</label>
     <input type="number"  class="angle-input">
     <button id="check-btn">Check</button>
+    <div id="formula"><p><span>Property: Sum of angles of triangle = 180°</span></p> </div>
     <div id="output"></div>
+    </div>
+    <script src="istriangle.js"></script>
 </body>
-<script src="istriangle.js"></script>
 </html>

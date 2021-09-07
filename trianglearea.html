@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area of triangle</title>
+    <link rel="stylesheet" href="istriangle.css">
 </head>
 <body>
-    <h2>Area of triangle</h2>
+    <nav class="navigation">
+        <div class="container-fluid">
+        <div class="app-name">Fun With Triangles</div>
+        <ul>
+            <li>
+                <a href="/istriangle.html" >Is triangle?</a>
+                
+            </li>
+            <li>
+                <a href="/hypotenuse.html">Hypotenuse</a>
+                
+            </li>
+            <li>
+                <a href="/trianglearea.html" class="active">Area of Triangle</a>
+            </li>
+            <li>
+                <a href="/quiz.html">Quiz</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <h3>Area of triangle</h3>
     <label for="side1">Side(a)=</label>
     <input type="number" class="side-input">
     <label for="side2">Side(b)=</label>
@@ -15,11 +38,13 @@
     <label for="side3">Side(c)=</label>
     <input type="number" class="side-input">
     <button id="calculate-area-btn">Calculate Area</button>
-    <div id="output"></div>
     <div id="formula">
         <p>Heron's formula for area of triangle = √s*(s-a)*(s-b)*(s-c) <br>
         Where, Semi-Perimeter(s) = (a+b+c)/2</p>
     </div>
+    <div id="output"></div>
+    </div>
+    <script src="trianglearea.js"></script>
 </body>
-<script src="trianglearea.js"></script>
+
 </html>
