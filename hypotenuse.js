@@ -11,7 +11,7 @@ const sumOfSquares=sumOfSquaresOfSides(Number(sideInput[0].value), Number(sideIn
 
 const hypotenuseLength=Math.sqrt(sumOfSquares);
 
-outputDiv.innerText="The length of Hypotenuse = "+hypotenuseLength+" unit";
+outputDiv.innerText="The length of Hypotenuse = "+hypotenuseLength.toFixed(2)+" unit";
 }
 
 function checkError(){

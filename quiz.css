@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 .container-fluid {
     padding-left: 1rem;
@@ -86,4 +87,32 @@ button{
     font-weight: bold;
     color:white;
     text-align: center;
+}
+.footer {
+    font-family: 'Righteous', cursive;
+    color: yellow;
+    padding: 1.5rem 0rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.footer .heading {
+    padding-bottom: 1rem;
+
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+    list-style: none;
+} 
+.list-inline li {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white;
 }

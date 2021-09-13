@@ -17,7 +17,7 @@ function calculateMultiplication(){
 function calculateArea(){
     const multiplication=calculateMultiplication()
     const area=Math.sqrt(multiplication);
-    outputDiv.innerText="Area of triangle using Heron's formula = "+area+" unit square";
+    outputDiv.innerText="Area of triangle using Heron's formula = "+area.toFixed(2)+" unit square";
 
 }
 function checkError(){
