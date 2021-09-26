@@ -99,15 +99,14 @@ button{
     font-weight: bold;
     color:white;
 }
+
 .footer {
     font-family: 'Righteous', cursive;
     color: yellow;
     padding: 1.5rem 0rem;
-    border-top-right-radius: 1rem;
     text-align: center;
     font-size: 1.2rem;
-    margin-top: 2rem;
-   
+    margin-top: 2rem;  
 }
 .heading {
     padding-bottom: 1rem;
@@ -124,7 +123,6 @@ button{
     padding: 0rem 0.5rem;
 }
 .link {
-    color: yellow;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
